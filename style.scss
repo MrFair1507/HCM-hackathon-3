@@ -51,7 +51,7 @@ a {
   // margin: 0 auto;
   .sidebar {
     max-width: 286px;
-    height: 960px;
+    // height: 960px;
     background-color: #101010;
     display: flex;
     padding: 30px;
@@ -88,11 +88,11 @@ a {
         gap: 10px;
         cursor: pointer;
 
-        // sidebar__item:hover a {
-        //   width: 100%;
-        //   border-radius: 15px;
-        //   background-color: #26282e;
-        // }
+        sidebar__item:hover .sidebar__item-link {
+          width: 100%;
+          border-radius: 15px;
+          background-color: #26282e;
+        }
         .sidebar__item-link {
           display: flex;
           align-items: flex-start;
@@ -137,7 +137,9 @@ a {
           align-items: center;
           gap: 10px;
           border-radius: 8px;
+          cursor: pointer;
           background: #5827e4;
+
           .headpage__btn {
             color: var(--White-1, #fff);
             font-size: 16px;
@@ -190,6 +192,7 @@ a {
         table {
           width: 100%;
           table-layout: fixed;
+         
 
           thead th {
             position: sticky;
@@ -197,17 +200,18 @@ a {
             padding: 10px;
             background-color: $background-color;
             color: $font-color;
-            color:  #929cad;
+            color: #929cad;
             font-size: 16px;
             font-weight: 500;
             line-height: 22px; /* 137.5% */
+            
             
           }
           tbody td {
             padding: 10px;
             word-break: break-all;
             text-align: center;
-            color:  #555964;
+            color: #555964;
             font-size: 16px;
             font-weight: 500;
             line-height: 22px; /* 137.5% */
