@@ -10,8 +10,11 @@
 </head>
 
 <body>
-    
+
     <div class="container">
+        <div class="toggle">
+            <img src="./img/Menu.svg" alt="toggle">
+        </div>
         <div class="sidebar">
             <div class="sidebar__dropdown">
                 <!-- <div class="sidebar__lattermark">
@@ -29,31 +32,32 @@
                 <ul class="sidebar__items">
                     <li class="sidebar__item">
                         <a href="#" class="sidebar__item-link">
-                            <img src="./img/Line.svg" alt="sidebar__item-link">
+                            <img src="./img/Line.svg" alt="sidebar__item-link" class="sidebar__item-icon">
                             <span class="sidebar__item-link-text">Dashboard</span>
                         </a>
                     </li>
                     <li class="sidebar__item">
                         <a href="#" class="sidebar__item-link">
-                            <img src="./img/Frame 6.svg" alt="sidebar__item-link">
+                            <img src="./img/Frame 6.svg" alt="sidebar__item-link" class="sidebar__item-icon">
                             <span class="sidebar__item-link-text">Product</span>
                         </a>
                     </li>
                     <li class="sidebar__item">
                         <a href="#" class="sidebar__item-link">
-                            <img src="./img/wallet.svg" alt="sidebar__item-link">
+                            <img src="./img/wallet.svg" alt="sidebar__item-link" class="sidebar__item-icon">
                             <span class="sidebar__item-link-text">Wallet</span>
                         </a>
                     </li>
                     <li class="sidebar__item">
                         <a href="#" class="sidebar__item-link">
-                            <img src="./img/iconspace_Board_25px.svg" alt="sidebar__item-link">
+                            <img src="./img/iconspace_Board_25px.svg" alt="sidebar__item-link"
+                                class="sidebar__item-icon">
                             <span class="sidebar__item-link-text">Report</span>
                         </a>
                     </li>
                     <li class="sidebar__item">
                         <a href="#" class="sidebar__item-link">
-                            <img src="./img/setting.svg" alt="sidebar__item-link">
+                            <img src="./img/setting.svg" alt="sidebar__item-link" class="sidebar__item-icon">
                             <span class="sidebar__item-link-text">Settings</span>
                         </a>
                     </li>
@@ -71,7 +75,7 @@
 
                     <a href="#" class="headpage__right">
                         <img src="./img/bell.svg" alt="headpage__right-bell" class="headpage__right-bell">
-                        <img src="./avator.png" alt="headpage__right-ava" class="headpage__right-ava">
+                        <img src="./img/avator.png" alt="headpage__right-ava" class="headpage__right-ava">
                     </a>
                 </div>
 
@@ -80,172 +84,263 @@
                 <div class="components">
 
                     <ul class="components__items">
-                        <li class="components__item">Upload <span class="components__item__num">(35)</span></li>
+                        <li class="components__item"> Upload <span class="components__item__num">(35)</span></li>
                         <li class="components__item">Rejections <span class="components__item__num">(18)</span></li>
                         <li class="components__item">Published <span class="components__item__num">(60)</span></li>
                     </ul>
                 </div>
                 <section class="upload">
                     <table>
+                       
                         <thead>
-                            <th>
-                                <input type="checkbox" name="choice" id="choice">
-                                <label for="choice"></label>
-                            </th>
-                            <th>Design</th>
-                            <th>Title</th>
-                            <th>Categories</th>
-                            <th>Type</th>
-                            <th>Price</th>
-                            <th>Action</th>
+                            <tr>
+                                <th style="min-width: 96px;">
+                                    <input type="checkbox" name="choice" id="choice">
+                                    <label for="choice"></label>
+                                </th>
+                                <th style="min-width: 108px;">Design</th>
+                                <th style=" min-width: 239px;">Title</th>
+                                <th style="min-width: 159px;">Categories</th>
+                                <th style="min-width: 124px;">Type</th>
+                                <th style="min-width: 229px;">Price</th>
+                                <th style="min-width: 48px">Action</th>
+                            </tr>
                         </thead>
                         <tbody>
-                            <td>
-                                <input type="checkbox" name="choice" id="choice1">
-                                <label for="choice1"></label>
-                            </td>
-                            <td>
-                                <div class="table__img">
-                                    <img src="./img/Rectangle 6834.png" alt="table__img">
-                                </div>
-                            </td>
-                            <td>Education Landing Page</td>
-                            <td>Templates</td>
-                            <td>Figma</td>
-                            <td>$34</td>
-                            <td>
-                                <a href="#" class="table__link">
-                                    <img src="./img/edit.svg" alt="table__link" class="icon-link">
-                                    <img src="./img/delete (1).svg" alt="table__link" class="icon-link">
-                                </a>
-                            </td>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="choice" id="choice1">
+                                    <label for="choice1"></label>
+                                </td>
+                                <td>
+                                    <div class="table__img">
+                                        <img src="./img/Rectangle 6834.png" alt="table__img">
+                                    </div>
+                                </td>
+                                <td>Education Landing Page</td>
+                                <td>Templates</td>
+                                <td>Figma</td>
+                                <td>$34</td>
+                                <td>
+                                    <a href="#" class="table__link">
+                                        <img src="./img/edit.svg" alt="table__link" class="icon-link">
+                                        <img src="./img/delete (1).svg" alt="table__link" class="icon-link">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="choice" id="choice1">
+                                    <label for="choice1"></label>
+                                </td>
+                                <td>
+                                    <div class="table__img">
+                                        <img src="./img/Rectangle 6834.png" alt="table__img">
+                                    </div>
+                                </td>
+                                <td>Education Landing Page</td>
+                                <td>Templates</td>
+                                <td>Figma</td>
+                                <td>$34</td>
+                                <td>
+                                    <a href="#" class="table__link">
+                                        <img src="./img/edit.svg" alt="table__link" class="icon-link">
+                                        <img src="./img/delete (1).svg" alt="table__link" class="icon-link">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="choice" id="choice1">
+                                    <label for="choice1"></label>
+                                </td>
+                                <td>
+                                    <div class="table__img">
+                                        <img src="./img/Rectangle 6834.png" alt="table__img">
+                                    </div>
+                                </td>
+                                <td>Education Landing Page</td>
+                                <td>Templates</td>
+                                <td>Figma</td>
+                                <td>$34</td>
+                                <td>
+                                    <a href="#" class="table__link">
+                                        <img src="./img/edit.svg" alt="table__link" class="icon-link">
+                                        <img src="./img/delete (1).svg" alt="table__link" class="icon-link">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="choice" id="choice1">
+                                    <label for="choice1"></label>
+                                </td>
+                                <td>
+                                    <div class="table__img">
+                                        <img src="./img/Rectangle 6834.png" alt="table__img">
+                                    </div>
+                                </td>
+                                <td>Education Landing Page</td>
+                                <td>Templates</td>
+                                <td>Figma</td>
+                                <td>$34</td>
+                                <td>
+                                    <a href="#" class="table__link">
+                                        <img src="./img/edit.svg" alt="table__link" class="icon-link">
+                                        <img src="./img/delete (1).svg" alt="table__link" class="icon-link">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="choice" id="choice1">
+                                    <label for="choice1"></label>
+                                </td>
+                                <td>
+                                    <div class="table__img">
+                                        <img src="./img/Rectangle 6834.png" alt="table__img">
+                                    </div>
+                                </td>
+                                <td>Education Landing Page</td>
+                                <td>Templates</td>
+                                <td>Figma</td>
+                                <td>$34</td>
+                                <td>
+                                    <a href="#" class="table__link">
+                                        <img src="./img/edit.svg" alt="table__link" class="icon-link">
+                                        <img src="./img/delete (1).svg" alt="table__link" class="icon-link">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="choice" id="choice1">
+                                    <label for="choice1"></label>
+                                </td>
+                                <td>
+                                    <div class="table__img">
+                                        <img src="./img/Rectangle 6834.png" alt="table__img">
+                                    </div>
+                                </td>
+                                <td>Education Landing Page</td>
+                                <td>Templates</td>
+                                <td>Figma</td>
+                                <td>$34</td>
+                                <td>
+                                    <a href="#" class="table__link">
+                                        <img src="./img/edit.svg" alt="table__link" class="icon-link">
+                                        <img src="./img/delete (1).svg" alt="table__link" class="icon-link">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="choice" id="choice1">
+                                    <label for="choice1"></label>
+                                </td>
+                                <td>
+                                    <div class="table__img">
+                                        <img src="./img/Rectangle 6834.png" alt="table__img">
+                                    </div>
+                                </td>
+                                <td>Education Landing Page</td>
+                                <td>Templates</td>
+                                <td>Figma</td>
+                                <td>$34</td>
+                                <td>
+                                    <a href="#" class="table__link">
+                                        <img src="./img/edit.svg" alt="table__link" class="icon-link">
+                                        <img src="./img/delete (1).svg" alt="table__link" class="icon-link">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="choice" id="choice1">
+                                    <label for="choice1"></label>
+                                </td>
+                                <td>
+                                    <div class="table__img">
+                                        <img src="./img/Rectangle 6834.png" alt="table__img">
+                                    </div>
+                                </td>
+                                <td>Education Landing Page</td>
+                                <td>Templates</td>
+                                <td>Figma</td>
+                                <td>$34</td>
+                                <td>
+                                    <a href="#" class="table__link">
+                                        <img src="./img/edit.svg" alt="table__link" class="icon-link">
+                                        <img src="./img/delete (1).svg" alt="table__link" class="icon-link">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="choice" id="choice1">
+                                    <label for="choice1"></label>
+                                </td>
+                                <td>
+                                    <div class="table__img">
+                                        <img src="./img/Rectangle 6834.png" alt="table__img">
+                                    </div>
+                                </td>
+                                <td>Education Landing Page</td>
+                                <td>Templates</td>
+                                <td>Figma</td>
+                                <td>$34</td>
+                                <td>
+                                    <a href="#" class="table__link">
+                                        <img src="./img/edit.svg" alt="table__link" class="icon-link">
+                                        <img src="./img/delete (1).svg" alt="table__link" class="icon-link">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="choice" id="choice1">
+                                    <label for="choice1"></label>
+                                </td>
+                                <td>
+                                    <div class="table__img">
+                                        <img src="./img/Rectangle 6834.png" alt="table__img">
+                                    </div>
+                                </td>
+                                <td>Education Landing Page</td>
+                                <td>Templates</td>
+                                <td>Figma</td>
+                                <td>$34</td>
+                                <td>
+                                    <a href="#" class="table__link">
+                                        <img src="./img/edit.svg" alt="table__link" class="icon-link">
+                                        <img src="./img/delete (1).svg" alt="table__link" class="icon-link">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="choice" id="choice1">
+                                    <label for="choice1"></label>
+                                </td>
+                                <td>
+                                    <div class="table__img">
+                                        <img src="./img/Rectangle 6834.png" alt="table__img">
+                                    </div>
+                                </td>
+                                <td>Education Landing Page</td>
+                                <td>Templates</td>
+                                <td>Figma</td>
+                                <td>$34</td>
+                                <td>
+                                    <a href="#" class="table__link">
+                                        <img src="./img/edit.svg" alt="table__link" class="icon-link">
+                                        <img src="./img/delete (1).svg" alt="table__link" class="icon-link">
+                                    </a>
+                                </td>
+                            </tr>
                         </tbody>
-                        <tbody>
-                            <td>
-                                <input type="checkbox" name="choice" id="choice1">
-                                <label for="choice1"></label>
-                            </td>
-                            <td>
-                                <div class="table__img">
-                                    <img src="./img/Rectangle 6834.png" alt="table__img">
-                                </div>
-                            </td>
-                            <td>Education Landing Page</td>
-                            <td>Templates</td>
-                            <td>Figma</td>
-                            <td>$34</td>
-                            <td>
-                                <a href="#" class="table__link">
-                                    <img src="./img/edit.svg" alt="table__link" class="icon-link">
-                                    <img src="./img/delete (1).svg" alt="table__link" class="icon-link">
-                                </a>
-                            </td>
-                        </tbody>
-                        <tbody>
-                            <td>
-                                <input type="checkbox" name="choice" id="choice1">
-                                <label for="choice1"></label>
-                            </td>
-                            <td>
-                                <div class="table__img">
-                                    <img src="./img/Rectangle 6834.png" alt="table__img">
-                                </div>
-                            </td>
-                            <td>Education Landing Page</td>
-                            <td>Templates</td>
-                            <td>Figma</td>
-                            <td>$34</td>
-                            <td>
-                                <a href="#" class="table__link">
-                                    <img src="./img/edit.svg" alt="table__link" class="icon-link">
-                                    <img src="./img/delete (1).svg" alt="table__link" class="icon-link">
-                                </a>
-                            </td>
-                        </tbody>
-                        <tbody>
-                            <td>
-                                <input type="checkbox" name="choice" id="choice1">
-                                <label for="choice1"></label>
-                            </td>
-                            <td>
-                                <div class="table__img">
-                                    <img src="./img/Rectangle 6834.png" alt="table__img">
-                                </div>
-                            </td>
-                            <td>Education Landing Page</td>
-                            <td>Templates</td>
-                            <td>Figma</td>
-                            <td>$34</td>
-                            <td>
-                                <a href="#" class="table__link">
-                                    <img src="./img/edit.svg" alt="table__link" class="icon-link">
-                                    <img src="./img/delete (1).svg" alt="table__link" class="icon-link">
-                                </a>
-                            </td>
-                        </tbody>
-                        <tbody>
-                            <td>
-                                <input type="checkbox" name="choice" id="choice1">
-                                <label for="choice1"></label>
-                            </td>
-                            <td>
-                                <div class="table__img">
-                                    <img src="./img/Rectangle 6834.png" alt="table__img">
-                                </div>
-                            </td>
-                            <td>Education Landing Page</td>
-                            <td>Templates</td>
-                            <td>Figma</td>
-                            <td>$34</td>
-                            <td>
-                                <a href="#" class="table__link">
-                                    <img src="./img/edit.svg" alt="table__link" class="icon-link">
-                                    <img src="./img/delete (1).svg" alt="table__link" class="icon-link">
-                                </a>
-                            </td>
-                        </tbody>
-                        <tbody>
-                            <td>
-                                <input type="checkbox" name="choice" id="choice1">
-                                <label for="choice1"></label>
-                            </td>
-                            <td>
-                                <div class="table__img">
-                                    <img src="./img/Rectangle 6834.png" alt="table__img">
-                                </div>
-                            </td>
-                            <td>Education Landing Page</td>
-                            <td>Templates</td>
-                            <td>Figma</td>
-                            <td>$34</td>
-                            <td>
-                                <a href="#" class="table__link">
-                                    <img src="./img/edit.svg" alt="table__link" class="icon-link">
-                                    <img src="./img/delete (1).svg" alt="table__link" class="icon-link">
-                                </a>
-                            </td>
-                        </tbody>
-                        <tbody>
-                            <td>
-                                <input type="checkbox" name="choice" id="choice1">
-                                <label for="choice1"></label>
-                            </td>
-                            <td>
-                                <div class="table__img">
-                                    <img src="./img/Rectangle 6834.png" alt="table__img">
-                                </div>
-                            </td>
-                            <td>Education Landing Page</td>
-                            <td>Templates</td>
-                            <td>Figma</td>
-                            <td>$34</td>
-                            <td>
-                                <a href="#" class="table__link">
-                                    <img src="./img/edit.svg" alt="table__link" class="icon-link">
-                                    <img src="./img/delete (1).svg" alt="table__link" class="icon-link">
-                                </a>
-                            </td>
-                        </tbody>
+                    
+                        
                     </table>
                 </section>
             </div>

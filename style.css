@@ -42,6 +42,7 @@ body {
   font-size: 16px;
   line-height: 1;
   font-family: "satoshi", sans-serif;
+  overflow-y: hidden;
 }
 
 a {
@@ -49,7 +50,7 @@ a {
 }
 
 .container {
-  max-width: 1440px;
+  margin: 0 auto;
   display: flex;
   background-color: #f5f7fb;
 }
@@ -84,6 +85,7 @@ a {
   font-weight: 600;
 }
 .container .sidebar .sidebar__dropdown .sidebar__item {
+  width: 100%;
   display: flex;
   padding: 15px 87px 15px 16px;
   flex-direction: column;
@@ -91,21 +93,30 @@ a {
   gap: 10px;
   cursor: pointer;
 }
-.container .sidebar .sidebar__dropdown .sidebar__item sidebar__item:hover .sidebar__item-link {
-  width: 100%;
-  border-radius: 15px;
-  background-color: #26282e;
+.container .sidebar .sidebar__dropdown .sidebar__item .sidebar__item-link:hover .sidebar__item-link-text,
+.container .sidebar .sidebar__dropdown .sidebar__item .sidebar__item-link:hover .sidebar__item-icon {
+  color: #F5F7FB;
 }
 .container .sidebar .sidebar__dropdown .sidebar__item .sidebar__item-link {
+  width: 100%;
   display: flex;
   align-items: flex-start;
   gap: 10px;
+  transition: all 0.2s ease;
 }
 .container .sidebar .sidebar__dropdown .sidebar__item .sidebar__item-link .sidebar__item-link-text {
   color: #b2b2b8;
   font-size: 18px;
   font-weight: 500;
   line-height: 24px; /* 133.333% */
+}
+.container .sidebar .sidebar__dropdown .sidebar__item:hover {
+  border-radius: 15px;
+  background-color: #26282e;
+}
+.container .sidebar .sidebar__dropdown .sidebar__item:hover .sidebar__item-link span {
+  width: 100%;
+  color: #fff;
 }
 .container .main__page {
   width: 100%;
@@ -151,39 +162,52 @@ a {
   height: 36px;
 }
 .container .main__page .main__page-wrap {
-  width: calc(100% - 60px);
-  margin: 0 auto;
+  padding: 0 30px;
 }
 .container .main__page .main__page-wrap .components {
   width: 100%;
   border-bottom: 1px solid #e9eaec;
 }
 .container .main__page .main__page-wrap .components .components__items {
-  margin: 40px 0;
-  width: 50%;
   display: flex;
-  justify-content: space-between;
+  gap: 90px;
 }
 .container .main__page .main__page-wrap .components .components__items .components__item {
   color: #929CAD;
   font-size: 20px;
   font-weight: 500;
   line-height: 28px; /* 140% */
+  padding: 40px 0;
+  cursor: pointer;
+  position: relative;
+}
+.container .main__page .main__page-wrap .components .components__items .components__item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+}
+.container .main__page .main__page-wrap .components .components__items .components__item:hover {
+  color: #101010;
+}
+.container .main__page .main__page-wrap .components .components__items .components__item:hover::after {
+  background-color: #5827e4;
 }
 .container .main__page .main__page-wrap .upload {
   margin-top: 39px;
   width: 100%;
-  display: flex;
   padding: 10px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
+  min-width: 100%;
   border-radius: 14px;
   background: #fff;
+  max-height: 800px;
+  overflow-y: scroll;
 }
 .container .main__page .main__page-wrap .upload table {
   width: 100%;
-  table-layout: fixed;
+  border-collapse: collapse;
 }
 .container .main__page .main__page-wrap .upload table thead th {
   position: sticky;
@@ -194,12 +218,16 @@ a {
   color: #929cad;
   font-size: 16px;
   font-weight: 500;
+  text-align: left;
   line-height: 22px; /* 137.5% */
+}
+.container .main__page .main__page-wrap .upload table thead tr th:last-child {
+  padding: 0 10px 0 0;
 }
 .container .main__page .main__page-wrap .upload table tbody td {
   padding: 10px;
   word-break: break-all;
-  text-align: center;
+  text-align: left;
   color: #555964;
   font-size: 16px;
   font-weight: 500;
@@ -214,6 +242,16 @@ a {
 }
 .container .main__page .main__page-wrap .upload table tbody td .table__link {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 20px;
+}
+.container .toggle {
+  display: none;
+}
+
+@media screen and (max-width: 1023.98px) {
+  .upload {
+    min-width: 100%;
+    overflow-x: scroll;
+  }
 }/*# sourceMappingURL=style.css.map */
