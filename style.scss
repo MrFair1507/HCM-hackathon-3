@@ -1099,6 +1099,14 @@ a {
       display: flex;
       align-items: center;
       gap: 16px;
+      .mcreate__save {
+        display: flex;
+        align-items: center;
+        padding: 8px 14px;
+        gap: 9px;
+        color: #6e7581;
+        cursor: pointer;
+      }
       .mcreate__publish {
         display: flex;
         padding: 8px 14px;
@@ -1107,6 +1115,7 @@ a {
         gap: 10px;
         border-radius: 20px;
         background: #5827e4;
+        cursor: pointer;
       }
     }
   }
