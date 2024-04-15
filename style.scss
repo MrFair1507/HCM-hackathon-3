@@ -1073,40 +1073,41 @@ a {
   .upload {
     margin: 0;
   }
-}
-// product
-.create {
-  display: none;
-}
-.mcreate {
-  display: block;
-}
-.mcreate {
-  width: 100%;
-  padding: 24px 27px 0 24px;
-  .create__bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+  // product
+  .create{
+    display: none;
   }
-  h2 {
-    color: #101010;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 28px; /* 140% */
+  .mcreate {
+    display: block;
   }
-  .create__buttons {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    .create__publish {
+  .mcreate {
+    width: 100%;
+    padding: 24px 27px 0 24px;
+    .mcreate__bar {
       display: flex;
-      padding: 8px 14px;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 10px;
-      border-radius: 20px;
-      background: #5827e4;
+      align-items: center;
+      justify-content: space-between;
+    }
+    h2 {
+      color: #101010;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 28px; /* 140% */
+    }
+    .mcreate__buttons {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      .mcreate__publish {
+        display: flex;
+        padding: 8px 14px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 20px;
+        background: #5827e4;
+      }
     }
   }
 }
