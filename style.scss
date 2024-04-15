@@ -54,7 +54,6 @@ a {
   max-width: 286px;
   background-color: #101010;
   display: flex;
-
   padding: 30px;
   align-items: flex-start;
   gap: 10px;
@@ -336,11 +335,13 @@ a {
 .product {
   width: 100%;
   display: flex;
-
+  justify-content: center;
+  align-items: flex-start;
+  // margin: 0 auto;
   // justify-content: space-between;
   background-color: $background-color;
   gap: 27px;
-  padding: 30px;
+  padding: 0 30px 30px 30px;
 }
 .informations {
   display: flex;
@@ -349,7 +350,7 @@ a {
   flex-direction: column;
   border-radius: 20px;
   background-color: #fff;
-  width: 100%;
+
   .info {
     width: 100%;
     .info__texts {
@@ -357,6 +358,7 @@ a {
       width: 100%;
       margin-bottom: 40px;
       align-items: center;
+
       gap: 10px;
       .info__num {
         display: flex;
@@ -398,11 +400,9 @@ a {
         font-weight: 500;
       }
       .info__input {
-        display: flex;
         width: 100%;
         padding: 16px 20px;
-        align-items: flex-start;
-        gap: 10px;
+
         border-radius: 8px;
         border: 1px solid #107aff;
       }
@@ -442,6 +442,7 @@ a {
           .info__description-item {
             width: 30px;
             height: 30px;
+            cursor: pointer;
           }
         }
         textarea {
@@ -608,8 +609,9 @@ a {
       }
     }
     .image__details {
-      display: flex;
-      justify-content: flex-start;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
       max-width: 100%;
       gap: 30px;
       .detail {
@@ -632,6 +634,7 @@ a {
           }
         }
         .drop__detail {
+          // position: relative;
           display: flex;
           padding: 30px 76px;
           flex-direction: column;
@@ -645,13 +648,15 @@ a {
           .click__detail {
             display: flex;
             flex-direction: column;
+            justify-content: center;
             align-items: center;
+            // position: absolute;
             gap: 9px;
             .drop {
               display: flex;
               flex-shrink: 0;
               padding: 18px;
-
+              justify-content: center;
               gap: 10px;
               border-radius: 30px;
               border: 1px solid #f2f4f5;
@@ -776,20 +781,11 @@ a {
   display: none;
 }
 .informations__left {
-  display: flex;
-  flex-direction: column;
-  height: auto;
   padding: 24px 30px;
-  align-items: flex-start;
-  gap: 30px;
   border-radius: 20px;
   background-color: #fff;
-}
-.informations__left-wrap {
-  width: 100%;
   display: flex;
   justify-content: center;
-  height: auto;
   flex-direction: column;
   align-items: flex-start;
   gap: 30px;
@@ -879,8 +875,8 @@ a {
   .product__click {
     width: 100%;
     display: flex;
-    padding: 22px 99px 22px 82px;
-    flex-direction: column;
+    justify-content: center;
+
     align-items: center;
     gap: 10px;
     border-radius: 8px;
@@ -1027,7 +1023,7 @@ a {
     display: none;
   }
   .informations {
-    max-width: 100%;
+    width: 100%;
     display: flex;
     padding: 30px 20px;
     margin: 0 auto;
@@ -1038,6 +1034,15 @@ a {
     width: 100%;
     display: block;
   }
+  // .image__details {
+  //   width: 100%;
+  //   flex-direction: column;
+  //   .detail {
+  //     .drop {
+  //       width: 100%;
+  //     }
+  //   }
+  // }
 }
 @media screen and (max-width: 767.98px) {
   .components {
@@ -1075,7 +1080,7 @@ a {
   }
 
   // product
-  .create{
+  .create {
     display: none;
   }
   .mcreate {
@@ -1116,6 +1121,13 @@ a {
         border-radius: 20px;
         background: #5827e4;
         cursor: pointer;
+      }
+    }
+  }
+  .informations {
+    .image {
+      .image__details {
+        grid-template-columns: 1fr;
       }
     }
   }
